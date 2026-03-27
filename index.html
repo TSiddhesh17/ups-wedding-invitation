@@ -37,16 +37,6 @@ html, body {
   padding: 0;
 }
 
-/* dark overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3);
-}
 
 /* content above overlay */
 .hero div {
@@ -60,16 +50,9 @@ html, body {
   animation: zoomBg 10s ease-in-out infinite alternate;
 }
 
-@keyframes zoomBg {
-  from { background-size: 100%; }
   to { background-size: 110%; }
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
   to {
     opacity: 1;
     transform: translateY(0);
