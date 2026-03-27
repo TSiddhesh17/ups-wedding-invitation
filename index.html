@@ -4,210 +4,164 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Upasana & Siddhesh Wedding</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f5e6d3;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5e6d3;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* HERO */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('hero.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    text-align: left;
+  background: url('hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f3e3c3;
 }
 
-/* Dark overlay */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
 }
 
-.hero .hero-text {
-    position: relative;
-    z-index: 1;
-    bottom: 30px;
-    left: 5%;
-    color: #fff;
-    max-width: 90%;
-    animation: fadeSlideIn 2s ease forwards;
+.hero p {
+  font-style: italic;
 }
 
-.hero .hero-text p {
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 10px;
+.section-orange {
+  background: #b8732c;
+  color: #fff;
+  padding: 60px 20px;
 }
 
-.hero .hero-text h1 {
-    font-size: 60px;
-    margin: 0;
+.section-orange .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Animation */
-@keyframes fadeSlideIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+.section-orange img {
+  width: 300px;
+  border: 5px solid #e6c18f;
 }
 
-/* SECTION */
-.section {
-    padding: 60px 10%;
+.section-orange h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
 }
 
-/* CELEBRATE */
-.celebrate {
-    background: #b8731d;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-}
-
-.celebrate img {
-    width: 300px;
-    border: 5px solid #fff;
-}
-
-.celebrate-text {
-    max-width: 500px;
-}
-
-/* DETAILS */
 .details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+  background: #ead7bd;
+  padding: 60px 20px;
+}
+
+.details h2 {
+  font-family: 'Playfair Display', serif;
+  color: #7a2e1c;
+  text-align: center;
+  font-size: 40px;
+}
+
+.details-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .details img {
-    width: 300px;
+  width: 300px;
 }
 
-.details-text {
-    max-width: 400px;
+.info {
+  max-width: 400px;
 }
 
-.details-text a {
-    display: inline-block;
-    margin-top: 5px;
-    padding: 8px 15px;
-    background: #7b2e2e;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+.info h3 {
+  color: #7a2e1c;
 }
 
-/* CONTACT */
 .contact {
-    background: #a8895f;
-    color: #4b1e1e;
+  background: #a88256;
+  padding: 60px 20px;
+  color: #5a1f14;
 }
 
 .contact h2 {
-    font-size: 40px;
+  font-family: 'Playfair Display', serif;
 }
 
-.contact-item {
-    margin: 20px 0;
+.contact-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
-/* RESPONSIVE */
-@media(max-width: 768px) {
-    .hero .hero-text p {
-        font-size: 18px;
-    }
-
-    .hero .hero-text h1 {
-        font-size: 40px;
-    }
-
-    .celebrate, .details {
-        flex-direction: column;
-        text-align: center;
-    }
+@media(max-width:768px){
+  .hero h1 { font-size: 40px; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <p>Road to Forever with</p>
-        <h1>Siddhesh & Upasana</h1>
-    </div>
+  <div>
+    <p>Road to Forever with</p>
+    <h1>Siddhesh & Upasana</h1>
+  </div>
 </section>
 
-<!-- CELEBRATE -->
-<section class="section celebrate">
-    <div class="celebrate-text">
-        <h2>Celebrate With Us</h2>
-        <p>
-            Together with our families, we joyfully invite you to share in the celebration of our marriage.
-            As we promise our lives to one another, your presence will make this special moment even more meaningful.
-        </p>
+<section class="section-orange">
+  <div class="content">
+    <div>
+            <h2>Celebrate With Us</h2>
+      <p>Together with our families, we joyfully invite you to share in the celebration of our marriage.<br>
+      As we promise our lives to one another, your presence will make this special moment even more meaningful.</p>
     </div>
-    <img src="couple1.jpg" alt="Couple">
+    <img src="couple1.jpg">
+  </div>
 </section>
 
-<!-- DETAILS -->
-<section class="section">
-    <h2 style="color:#7b2e2e;">THE DETAILS</h2>
-    <div class="details">
-        <img src="couple2.jpg" alt="Couple">
+<section class="details">
+  <h2>THE DETAILS</h2>
+  <div class="details-content">
+    <img src="couple2.jpg">
+    <div class="info">
+      <h3>Haldi</h3>
+      <p>18/02/2026 - 10:00 PM Onwards</p>
+      <p>528, Devali, At post- Kharpale, Pen, Raigad.</p>
+      <p><a href="#">View Map</a></p>
 
-        <div class="details-text">
-            <p><strong>Haldi:</strong> 18/04/2026 - 10:00 AM Onwards</p>
-            <p><strong>Venue:</strong></p>
-            <a href="https://maps.app.goo.gl/m9AvMnQ2ZhV5wzT86" target="_blank">
-                📍 View Haldi Location
-            </a>
+      <hr>
 
-            <br><br>
-
-            <p><strong>Wedding:</strong> 19/04/2026 - 11:45 AM</p>
-            <p><strong>Venue:</strong></p>
-            <a href="https://www.google.com/maps/place/18%C2%B043'32.0%22N+73%C2%B005'41.5%22E/@18.7254743,73.0948981,216m/data=!3m1!1e3!4m4!3m3!8m2!3d18.725564!4d73.094855" target="_blank">
-                📍 View Wedding Location
-            </a>
-        </div>
+      <h3>Wedding</h3>
+      <p>19/02/2026 - 11:45 AM</p>
+      <p>Swapnapurti Society, Wadgaon, Pen, Raigad.</p>
+      <p><a href="#">View Map</a></p>
     </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section contact">
-    <h2>Contact Details</h2>
-
-    <div class="contact-item">
-        <strong>Shivdas Mhatre</strong><br>
-        Mobile: +91 9422694385
+<section class="contact">
+  <h2>Contact Details</h2>
+  <div class="contact-box">
+    <div>
+      <h3>Shivdas Mhatre</h3>
+      <p>+91 9422694385</p>
     </div>
 
-    <div class="contact-item">
-        <strong>Devashish Mhatre</strong><br>
-        Mobile: +91 9665959795
+    <div>
+      <h3>Devashish</h3>
+      <p>+91 9665959795</p>
     </div>
+  </div>
 </section>
 
 </body>
