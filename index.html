@@ -16,6 +16,7 @@ body {
 
 /* HERO */
 .hero {
+  position: relative;
   background: url('hero.jpg') center/cover no-repeat;
   height: 85vh;
   display: flex;
@@ -24,6 +25,46 @@ body {
   text-align: left;
   padding: 30px;
   color: #d4af37;
+  overflow: hidden;
+}
+
+/* dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+/* content above overlay */
+.hero div {
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+/* zoom animation */
+.hero {
+  animation: zoomBg 10s ease-in-out infinite alternate;
+}
+
+@keyframes zoomBg {
+  from { background-size: 100%; }
+  to { background-size: 110%; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .hero h1 {
   font-family: 'Playfair Display', serif;
@@ -165,12 +206,12 @@ body {
   <h2>Contact Details</h2>
   <div class="contact-box">
     <div>
-      <h3>Siddhesh Tandel</h3>
-      <p>+91 8378021327</p>
+      <h3>Shivdas Mhatre</h3>
+      <p>+91 9422694385</p>
     </div>
     <div>
-      <h3>Bhaskar Tandel</h3>
-      <p>+91 9822567958</p>
+      <h3>Devashsish Mhatre</h3>
+      <p>+91 9665959795</p>
     </div>
   </div>
 </section>
