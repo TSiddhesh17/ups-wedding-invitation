@@ -17,16 +17,24 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  background: url('hero.jpg') center center / cover no-repeat;
-  height: 100vh;
-  min-height: 100svh;
+  background: url('hero.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100dvh;
+  min-height: 100dvh;
+  margin: 0;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   text-align: left;
-  padding: 20px;
+  padding: 15px;
   color: #d4af37;
   overflow: hidden;
+}
+
+/* remove any default gaps */
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 /* dark overlay */
