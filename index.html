@@ -22,24 +22,31 @@ h1, h2 {
 .hero {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    height: 100vh;
+    background: url('hero.jpg') no-repeat center center/cover;
     display: flex;
-    justify-content: flex-start; /* left-aligned text */
-    align-items: flex-end; /* bottom alignment */
+    justify-content: flex-start;
+    align-items: flex-end;
     text-align: left;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Dark overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .hero .hero-text {
-    position: absolute;
+    position: relative;
+    z-index: 1;
     bottom: 30px;
-    left: 5%; /* left margin */
-    color: #8B4513; /* brown text */
+    left: 5%;
+    color: #fff;
     max-width: 90%;
     animation: fadeSlideIn 2s ease forwards;
 }
@@ -48,13 +55,11 @@ h1, h2 {
     font-size: 24px;
     font-style: italic;
     margin-bottom: 10px;
-    animation-delay: 0s;
 }
 
 .hero .hero-text h1 {
     font-size: 60px;
     margin: 0;
-    animation-delay: 0.7s;
 }
 
 /* Animation */
@@ -148,7 +153,6 @@ h1, h2 {
 
 <!-- HERO -->
 <section class="hero">
-    <img src="hero.jpg" alt="Hero Image">
     <div class="hero-text">
         <p>Road to Forever with</p>
         <h1>Siddhesh & Upasana</h1>
