@@ -61,12 +61,18 @@ html, body {
 }
 .hero h1 {
   font-family: 'Alex Brush', cursive !important;
-  font-size: clamp(24px, 5vw, 60px);
+  font-size: 60px;
   margin: 10px 0;
   color: #a36b00;
   letter-spacing: 1px;
   line-height: 1.1;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 32px !important;
+  }
 }
 .hero p {
   font-family: 'Alex Brush', cursive;
